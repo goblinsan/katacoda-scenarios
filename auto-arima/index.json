@@ -1,0 +1,29 @@
+{
+  "title": "Time Series Modeling with Auto-ARIMA",
+  "description": "Using Python for forecast time series data",
+  "difficulty": "intermediate",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - Run Command",
+      "text": "step1.md"
+    }],
+    "intro": {
+      "courseData": "courseBase.sh",
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [{"name": "Display 3000 - theia", "port": 3000}],
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}
