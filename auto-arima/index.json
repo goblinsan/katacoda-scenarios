@@ -19,11 +19,10 @@
   },
   "environment": {
     "showdashboard": true,
-    "dashboards": [{"name": "Display 3000 - theia", "port": 3000}],
-    "uilayout": "terminal",
+    "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "docker"
+    "imageid": "python"
   }
 }
