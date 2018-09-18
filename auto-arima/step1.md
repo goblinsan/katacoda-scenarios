@@ -11,3 +11,21 @@ import pandas as pd
 data = pd.read_csv('Electric_Production.csv',index_col=0)
 print data.head()
 </pre>
+
+Running the program now should display the first few records of the data set
+`python app.py`{{execute}} 
+
+Ok, now let's get a visual of what this data looks like.
+
+First update the index to be timestamps, then update the column name:
+<pre class="file" data-filename="app.py" data-target="append">
+data.index = pd.to_datetime(data.index)
+data.columns = ['Energy Production']
+</pre>
+
+Now import the ploting libraries and display the graph:
+<pre class="file" data-filename="app.py" data-target="append">
+import plotly.plotly as ply
+import cufflinks as cf
+print data.iplot(title="Energy Production Jan 1985--Jan 2018")
+</pre>
