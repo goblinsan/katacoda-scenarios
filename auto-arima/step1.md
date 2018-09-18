@@ -38,3 +38,7 @@ ply.plot({
     "layout": go.Layout(title="Energy Production Jan 1985--Jan 2018")
 }, auto_open=True)
 </pre>
+
+OK, let's view the graph:
+
+Render port 8500: https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/temp-plot.html
