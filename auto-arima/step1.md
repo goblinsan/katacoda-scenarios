@@ -24,7 +24,7 @@ data.columns = ['Energy Production']
 </pre>
 
 Install plotly library
-`pip install plotly --user`
+`pip install plotly --user`{{execute}} 
 
 Now import the plotly libraries and create an html page for the graph:
 <pre class="file" data-filename="app.py" data-target="append">
