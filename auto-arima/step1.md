@@ -23,9 +23,18 @@ data.index = pd.to_datetime(data.index)
 data.columns = ['Energy Production']
 </pre>
 
-Now import the ploting libraries and display the graph:
+Install plotly library
+`pip install plotly --user`
+
+Now import the plotly libraries and create an html page for the graph:
 <pre class="file" data-filename="app.py" data-target="append">
-import plotly.plotly as ply
-import cufflinks as cf
-print data.iplot(title="Energy Production Jan 1985--Jan 2018")
+import plotly.offline as ply
+import plotly.graph_objs as go
+
+graphme = [go.Scatter( x=data.index, y=data['Energy Production'] )]
+
+ply.plot({
+    "data": graphme,
+    "layout": go.Layout(title="Energy Production Jan 1985--Jan 2018")
+}, auto_open=True)
 </pre>
