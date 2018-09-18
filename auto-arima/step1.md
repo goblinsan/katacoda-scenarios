@@ -45,9 +45,5 @@ Run the program to generate the graph:
 `python app.py`{{execute}} 
 
 OK, let's view the graph:.
-First we need to fire up the simple server:
-`python -m SimpleHTTPServer 8000`{{execute}} 
-
-Now the page should be accessible:
 
 Render port 8000: https://[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com/temp-plot.html
