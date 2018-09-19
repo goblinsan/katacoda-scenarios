@@ -18,3 +18,8 @@ and testing the iframe-terminal layout
       }
     
 ```
+
+Theia is going to start in :
+`/home/project`
+
+
