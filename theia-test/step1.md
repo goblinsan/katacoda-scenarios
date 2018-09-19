@@ -43,10 +43,13 @@ first shutdown the server:
 Now grab our IP address:
 `hostname -i`{{execute}}
 
+And you'll need the host running this scenario:
+[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com {{copy}}
+
 ### Open the Theia editor in the IDE tab
 In your project settings.py file,set ALLOWED_HOSTS like this (line 28) :
 
-ALLOWED_HOSTS = ['[HOST_SUBDOMAIN]-8000-[KATACODA_HOST].environments.katacoda.com', 'ip-from-previous-step']
+ALLOWED_HOSTS = ['[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com', 'ip-from-previous-step']
 
 ### OK, lets try again:
 `python manage.py runserver 0.0.0.0:8000`{{execute}}
@@ -55,9 +58,3 @@ ALLOWED_HOSTS = ['[HOST_SUBDOMAIN]-8000-[KATACODA_HOST].environments.katacoda.co
 
 Django Welcome Screen: https://[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com 
 
-
-
-
-Next, start your first app by running python manage.py startapp [app_label].
-
-python manage.py startapp polls
