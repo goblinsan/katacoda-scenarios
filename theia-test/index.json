@@ -1,0 +1,29 @@
+{
+  "title": "Testing Theia IDE",
+  "description": "Using Eclipse Theia IDE as the Editor",
+  "difficulty": "beginner",
+  "time": "5 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - test it out",
+      "text": "step1.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "courseData": "courseBase.sh",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [{"name": "IDE", "port": 3000}],
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "theiaide",
+    "port": 3000
+  }
+}
