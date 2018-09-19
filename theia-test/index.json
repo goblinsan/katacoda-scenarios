@@ -10,7 +10,10 @@
     },{
       "title": "Step 2 - Create your first app",
       "text": "step2.md"
-    }
+    },{
+        "title": "Step 3 - Write your first view",
+        "text": "step3.md"
+      }
     ],
     "intro": {
       "text": "intro.md",

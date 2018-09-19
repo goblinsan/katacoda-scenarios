@@ -1,5 +1,5 @@
-# Let's see how this works
+# Writing your first Django app, part 1
 
-## Theia has some great features, lets see if we can leverage some of its functionality
+## This walks through the Django documentation for writing your first app using Theia as the IDE
 
-Just try out some basics
+The docs for this guide are hosted on the Django site [here](https://docs.djangoproject.com/en/1.9/intro/tutorial01/)
