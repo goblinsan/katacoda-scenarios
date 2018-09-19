@@ -23,16 +23,40 @@ Once Django is installed we can use it to generate a project structure for us.  
 Ok, try and run the project:
 `python manage.py runserver 0.0.0.0:8000`{{execute}}
 
-Can you see it?
+###Can you see it?
+
 Django Welcome Screen: https://[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com 
 
-You may see some UNKNOWN-HOST errors... in which case update your settings.py
+###Probably not...
+You probably see something like this:
+```
+DisallowedHost at /
+Invalid HTTP_HOST header:...
+```
 
+So let's update the ALLOWED_HOSTS setting.
+
+first shutdown the server:
+
+<kbd>command</kbd> + <kbd>c</kbd>
+
+Now grab our IP address:
 `hostname -i`{{execute}}
 
-In your project settings.py file,set ALLOWED_HOSTS like this :
+### Open the Theia editor in the IDE tab
+In your project settings.py file,set ALLOWED_HOSTS like this (line 28) :
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '2886795266-8000-kitek01.environments.katacoda.com', '172.17.0.2']
+ALLOWED_HOSTS = ['[HOST_SUBDOMAIN]-8000-[KATACODA_HOST].environments.katacoda.com', 'ip-from-previous-step']
+
+### OK, lets try again:
+`python manage.py runserver 0.0.0.0:8000`{{execute}}
+
+###Now can you see it?
+
+Django Welcome Screen: https://[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com 
+
+
+
 
 Next, start your first app by running python manage.py startapp [app_label].
 
