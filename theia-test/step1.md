@@ -20,8 +20,10 @@ Once Django is installed we can use it to generate a project structure for us.  
 `cd /home/project/`{{execute}}
 `django-admin startproject mysite /home/project`{{execute}}
 
-Ok, try and run the project:
-`python manage.py runserver 0.0.0.0:8000`{{execute}}
+Ok, try and run the project.  We'll start the server in a separate terminal so we can leave it running.
+`python manage.py runserver 0.0.0.0:8000`{{execute T2}}
+
+If you want to shut it down, just use: <kbd>command</kbd> + <kbd>c</kbd>
 
 ###Can you see it?
 
@@ -35,16 +37,6 @@ Invalid HTTP_HOST header:...
 ```
 
 So let's update the ALLOWED_HOSTS setting.
-
-first shutdown the server:
-
-<kbd>command</kbd> + <kbd>c</kbd>
-
-Now grab our IP address:
-`hostname -i`{{execute}}
-
-And you'll need the host running this scenario:
-`[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com`{{copy}}
 
 ### Open the Theia editor in the IDE tab
 In your project settings.py file,set ALLOWED_HOSTS to this (line 28) :
