@@ -58,4 +58,4 @@ urlpatterns = [
 
 You have now wired an index view into the URLconf. Lets verify it’s working, run the following command:
 
-`python manage.py runserver 0.0.0.0:8000`{{execute}}
+Django Welcome Screen: https://[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com/polls
