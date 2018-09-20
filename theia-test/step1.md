@@ -23,13 +23,14 @@ Once Django is installed we can use it to generate a project structure for us.  
 Ok, try and run the project.  We'll start the server in a separate terminal so we can leave it running.
 
 We're running in a virtual shell so we need to open that env in the 2nd terminal then start the server:
-```
+`
 cd /home/scrapbook/tutorial
 pipenv shell
-cd /home/project/
-```{{execute T2}}
+`{{execute T2}}
 
-`python manage.py runserver 0.0.0.0:8000`{{execute T2}}
+`
+cd /home/project/
+python manage.py runserver 0.0.0.0:8000`{{execute T2}}
 
 If you want to shut it down, just use: <kbd>control</kbd> + <kbd>c</kbd>
 
