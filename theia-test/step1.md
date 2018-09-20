@@ -21,15 +21,23 @@ Once Django is installed we can use it to generate a project structure for us.  
 `django-admin startproject mysite /home/project`{{execute}}
 
 Ok, try and run the project.  We'll start the server in a separate terminal so we can leave it running.
-`python manage.py runserver 0.0.0.0:8000`{{execute T2}}
 
-If you want to shut it down, just use: <kbd>command</kbd> + <kbd>c</kbd>
+We're running in a virtual shell so we need to open that env in the 2nd terminal then start the server:
+```
+cd /home/scrapbook/tutorial
+pipenv shell
+cd /home/project/
+python manage.py runserver 0.0.0.0:8000
 
-###Can you see it?
+```{{execute T2}}
+
+If you want to shut it down, just use: <kbd>control</kbd> + <kbd>c</kbd>
+
+### Can you see it?
 
 Django Welcome Screen: https://[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com 
 
-###Probably not...
+### Probably not...
 You probably see something like this:
 ```
 DisallowedHost at /
@@ -43,10 +51,7 @@ In your project settings.py file,set ALLOWED_HOSTS to this (line 28) :
 
 `ALLOWED_HOSTS = ['[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com', '[[HOST_IP]]']`{{copy}}
 
-### OK, lets try again:
-`python manage.py runserver 0.0.0.0:8000`{{execute}}
-
-###Now can you see it?
+### Now can you see it?
 
 Django Welcome Screen: https://[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com 
 
