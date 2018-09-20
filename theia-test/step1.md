@@ -44,12 +44,12 @@ Now grab our IP address:
 `hostname -i`{{execute}}
 
 And you'll need the host running this scenario:
-`[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com` {{copy}}
+`[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com`{{copy}}
 
 ### Open the Theia editor in the IDE tab
-In your project settings.py file,set ALLOWED_HOSTS to something like this (line 28) :
+In your project settings.py file,set ALLOWED_HOSTS to this (line 28) :
 
-ALLOWED_HOSTS = ['xxxxxxx-8000-xxxxxxx.environments.katacoda.com', 'ip-from-previous-step']
+`ALLOWED_HOSTS = ['[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com', '[[HOST_IP]]']`{{copy}}
 
 ### OK, lets try again:
 `python manage.py runserver 0.0.0.0:8000`{{execute}}
